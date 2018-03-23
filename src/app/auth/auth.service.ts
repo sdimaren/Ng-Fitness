@@ -39,7 +39,7 @@ export class AuthService {
   }
 
   isAuth() {
-    return this.user !== null;
+    return this.user != null;
   }
   private authSuccessful() {
     this.authChange.next(true);
